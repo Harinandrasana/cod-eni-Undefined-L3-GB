@@ -1,7 +1,12 @@
 import React from "react";
+import Welcom from "../components/HomePageContain/Welcom";
 
 const HomePage = () => {
-  return <div>Page d'accueil</div>;
+  return (
+    <div>
+      <Welcom />
+    </div>
+  );
 };
 
 export default HomePage;

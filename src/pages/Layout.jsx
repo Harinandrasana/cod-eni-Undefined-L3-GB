@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Grid, GridItem } from "@chakra-ui/react";
 import NavBar from "../components/navigation/Navbar";
+import { Outlet } from "react-router-dom";
 
 const Layout = () => {
   return (
@@ -47,7 +48,7 @@ const Layout = () => {
           rounded={21}
           area={"main"}
         >
-          main
+          <Outlet />
         </GridItem>
         <GridItem
           alignItems={"center"}

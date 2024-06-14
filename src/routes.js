@@ -6,6 +6,7 @@ import HelpPage from "./pages/HelpPage";
 import ServicesPage from "./pages/ServicesPage";
 import ContactPage from "./pages/ContactPage";
 import AboutPage from "./pages/AboutPage";
+import HomePage from "./pages/HomePage"
 
 const router = createBrowserRouter([
     {
@@ -15,7 +16,7 @@ const router = createBrowserRouter([
         children: [
             {
                 index: true,
-                element: <App />,
+                element: <HomePage />,
             },
             { path: "/help", element: <HelpPage /> },
             { path: "/services", element: <ServicesPage /> },
