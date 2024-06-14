@@ -24,7 +24,8 @@ const router = createBrowserRouter([
             { path: "/contact", element: <ContactPage /> },
             { path: "/about", element: <AboutPage /> },
             { path: "/about", element: <AboutBanner/>},
-            { path: "/withSpeechBubbles", element: <WithSpeechBubbles/>}
+            { path: "/withSpeechBubbles", element: <WithSpeechBubbles/>},
+          
         ],
     },
 ]);
