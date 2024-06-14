@@ -5,14 +5,14 @@ import { Link } from "react-router-dom";
 import { fadeIn } from "../../variants";
 
 const Welcom = () => {
-  const text = "Bienvenue".split("");
+  const text = "Bienvenue sur CitizenConnect".split("");
 
   const durationPerChar = 1.5;
   const charCount = text.length;
   const totalDelay = (charCount * durationPerChar) / 10;
   return (
     <div className="my-4">
-      <Center mt={"15%"}>
+      <Center mt={10}>
         <Box textAlign="center">
           {text.map((el, i) => (
             <motion.span
@@ -24,7 +24,7 @@ const Welcom = () => {
               }}
               key={i}
             >
-              <Text fontSize={65} color="#00024d" display="inline">
+              <Text fontSize={40} color="#00024d" display="inline">
                 {el}
               </Text>
             </motion.span>
@@ -36,23 +36,32 @@ const Welcom = () => {
               duration: durationPerChar,
               delay: totalDelay,
             }}
+            className="w-10"
           >
             <motion.h1
               variants={fadeIn("down", 0.2)}
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="h1"
+              className="h1 mb-4"
             >
-              Clicker sur le bouton pour commencer
+              <Text mb={2}>
+                votre plateforme pour des services gouvernementaux en ligne
+                simplifiés. Modernisez vos interactions avec l'e-gouvernance :
+              </Text>
+              <Text>
+                accès facile aux impôts, actes d'état civil, permis, et plus,
+                avec une authentification unique pour une expérience sécurisée
+                et efficace.
+              </Text>
               <br />
               <Link to="/help">
                 <Text color="blue.200">Besoin d'aide ?</Text>
               </Link>
               <br />
-              <Link to={"/postes"}>
-                <Button py={5} color="white" colorScheme="red">
-                  <Text fontSize={20}>Commencer</Text>
+              <Link to={"/services"}>
+                <Button py={5} color="white" colorScheme="green">
+                  <Text fontSize={20}>Consulter nos services</Text>
                 </Button>
               </Link>
             </motion.h1>
