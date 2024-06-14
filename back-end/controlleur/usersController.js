@@ -3,12 +3,13 @@ const Users = require("../models/usersModel");
 class UsersController {
 
     static async addUsers(req, res) {
-        const identifient = req.body.identifient;
+        const username = req.body.username;
+        const email = req.body.email;
         const password = req.body.password;
 
-        const result = await Users.singUp(identifiant, password);
+        const result = await Users.singUp(username, email, password);
         if (result)
-            res.json({ msg: "Ajout avec succe" });
+            res.json({ msg: "Ajout avec succes" });
         else
             res.json({ msg: "problem d'ajout" });
     }
