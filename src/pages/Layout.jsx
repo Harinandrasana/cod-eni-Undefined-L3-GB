@@ -2,6 +2,8 @@ import React from "react";
 import { Box, Grid, GridItem } from "@chakra-ui/react";
 import NavBar from "../components/navigation/Navbar";
 import { Outlet } from "react-router-dom";
+import footer from "../components/Footer/footer";
+import TestFooter from "../components/Footer/TestFooter";
 
 const Layout = () => {
   return (
@@ -57,7 +59,7 @@ const Layout = () => {
           rounded={21}
           area={"footer"}
         >
-          footer
+          <TestFooter />
         </GridItem>
       </Grid>
     </Box>
