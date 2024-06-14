@@ -10,7 +10,8 @@ import Publicitaire from "./Publicitaire";
 import Accueil from "./Accueil";
 const HomePage = () => {
   return (
-    <div> <Accueil/>
+    <div> 
+      {/* <Accueil/> */}
       <Home />
      
       <Publicitaire/>

@@ -5,7 +5,7 @@ const TestFooter = () => {
     <footer class="bg-[#f2eded] py-12 px-10 font-sans tracking-wide">
     <div class="lg:max-w-[50%] mx-auto text-center">
       <h3 class="text-3xl font-bold text-gray-800">Contacter Nous</h3>
-      <p class="text-sm mt-6 text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci aliquam sapiente quis eum laboriosam corrupti. Obcaecati, laudantium assumenda, deserunt ea aliquam quo odit praesentium at aliquid vitae atque nemo placeat explicabo commodi dolorem tempore delectus aperiam. Magnam accusamus quasi totam autem distinctio natus vero! Obcaecati a ipsam reprehenderit odit natus?</p>
+      <p class="text-sm mt-6 text-gray-500">Trouvez les réponses à vos questions en nous contactant directement. Nous sommes là pour vous fournir le soutien dont vous avez besoin.</p>
 
       
     </div>
@@ -15,9 +15,8 @@ const TestFooter = () => {
     <div class="grid max-sm:grid-cols-1 max-lg:grid-cols-2 lg:grid-cols-4 gap-8">
 
       <div>
-        <h4 class="text-lg font-bold mb-6 text-gray-800">About Us</h4>
-        <p class="text-gray-500 mb-2 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean gravida,
-          mi eu pulvinar cursus, sem elit interdum mauris.</p>
+        <h4 class="text-lg font-bold mb-6 text-gray-800">N'hésitez pas à nous contacter pour toute question ou assistance supplémentaire. Notre équipe est là pour vous aider à chaque étape du chemin.</h4>
+        <p class="text-gray-500 mb-2 text-sm">Contactez-nous facilement pour toute question ou préoccupation. Notre équipe est disponible pour vous apporter une assistance personnalisée</p>
       </div>
 
       <div>

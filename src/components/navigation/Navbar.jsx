@@ -18,7 +18,7 @@ const NavBar = () => {
               objectFit="cover"
               height={55}
             />
-            <Box fontSize={30}>Citezen Connect</Box>
+            <Box fontSize={30}>Citizen Connect</Box>
           </HStack>
         </Link>
       </Box>

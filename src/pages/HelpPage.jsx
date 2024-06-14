@@ -842,9 +842,7 @@ export default function HelpPage() {
           </Text>
         </Heading>
         <Text color={'gray.500'} maxW={'3xl'}>
-          Never miss a meeting. Never be late for one too. Keep track of your meetings and
-          receive smart reminders in appropriate times. Read your smart “Daily Agenda”
-          every morning.
+        Consultez notre page d'aide complète pour découvrir des solutions rapides et efficaces à toutes vos questions, et naviguez facilement à travers nos guides détaillés pour une expérience utilisateur optimale.
         </Text>
         <Stack spacing={6} direction={'row'}>
           <Button
