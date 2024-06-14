@@ -45,8 +45,7 @@ export default function Home() {
                 zIndex: -1,
               }}
             >
-<<<<<<< HEAD
-              Bienvinue,
+              Bienvenue,
             </Text>
             <br />
             <Text as={"span"} color={"red.400"}>
@@ -55,20 +54,6 @@ export default function Home() {
           </Heading>
           <Text color={"gray.500"}>
             Votre plateforme pour des services gouvernementaux en ligne simplifier. Modernisez vos interactions avec l'e-gouvernance!
-=======
-              Bienvenu sur
-            </Text>
-            <br />
-            <Text as={"span"} color={"red.400"}>
-              citezenConect
-            </Text>
-          </Heading>
-          <Text color={"gray.500"}>
-            votre plateforme pour des services gouvernementaux en ligne
-            simplifiés. Modernisez vos interactions avec l'e-gouvernance : votre
-            plateforme pour des services gouvernementaux en ligne simplifiés.
-            Modernisez vos interactions avec l'e-gouvernance :
->>>>>>> d9982495700b43cd0e9ed91c2ca33d312f87822c
           </Text>
           <Stack
             spacing={{ base: 4, sm: 6 }}
