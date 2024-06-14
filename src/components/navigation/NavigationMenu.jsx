@@ -4,7 +4,9 @@ import { Link } from "react-router-dom";
 
 const NavigationMenu = () => {
   return (
-    <HStack spacing={4}>
+    <HStack spacing={4}
+    borderBottom="2px solid #dfd7d6"
+    >
       <Link to={"/"}>
         <Button bg="none">Accueil</Button>
       </Link>

@@ -34,7 +34,7 @@ const Layout = () => {
           p={2}
           h={82}
           verticalAlign="middle"
-          bg="gray"
+          bg="white"
           area={"header"}
           position="fixed"
           width={"full"}
