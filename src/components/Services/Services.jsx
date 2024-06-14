@@ -15,7 +15,7 @@ const Services = () => {
     <Stack spacing={4} px={20}>
       {groupedServices.map((group, groupIndex) => (
         <Center key={groupIndex}>
-          <SimpleGrid columns={1} spacing="40px">
+          <SimpleGrid columns={1} spacing="50px">
             {group.map((service) => (
               <Box key={service.id}>
                 <HStack spacing={10} verticalAlign={"top"}>

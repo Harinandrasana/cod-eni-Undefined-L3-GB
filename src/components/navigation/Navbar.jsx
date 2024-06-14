@@ -14,7 +14,8 @@ const NavBar = () => {
             alt="Logo"
             width={"auto"}
             objectFit="cover"
-            height={55}
+            height={111}
+            paddingBottom={2}
           />
         </Link>
       </Box>

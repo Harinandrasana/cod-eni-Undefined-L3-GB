@@ -45,17 +45,18 @@ export default function Home() {
                 zIndex: -1,
               }}
             >
-              Write once,
+              Bienvenu sur
             </Text>
             <br />
             <Text as={"span"} color={"red.400"}>
-              use everywhere!
+              citezenConect
             </Text>
           </Heading>
           <Text color={"gray.500"}>
-            Snippy is a rich coding snippets app that lets you create your own
-            code snippets, categorize them, and even sync them in the cloud so
-            you can use them anywhere. All that is free!
+            votre plateforme pour des services gouvernementaux en ligne
+            simplifiés. Modernisez vos interactions avec l'e-gouvernance : votre
+            plateforme pour des services gouvernementaux en ligne simplifiés.
+            Modernisez vos interactions avec l'e-gouvernance :
           </Text>
           <Stack
             spacing={{ base: 4, sm: 6 }}

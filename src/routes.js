@@ -24,15 +24,12 @@ const router = createBrowserRouter([
             { path: "/services", element: <ServicesPage /> },
             { path: "/contact", element: <ContactPage /> },
             { path: "/about", element: <AboutPage /> },
-<<<<<<< HEAD
-            { path: "/about", element: <AboutBanner/>},
-            { path: "/withSpeechBubbles", element: <WithSpeechBubbles/>},
-          
-=======
+            { path: "/about", element: <AboutBanner /> },
+            { path: "/withSpeechBubbles", element: <WithSpeechBubbles /> },
+
             { path: "/about", element: <AboutBanner /> },
             { path: "/withSpeechBubbles", element: <WithSpeechBubbles /> },
             { path: "/Home", element: <Home /> },
->>>>>>> 10343e04dbeb2526f52e587d3b205fe81b0cfafb
         ],
     },
 ]);
