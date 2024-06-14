@@ -85,8 +85,8 @@ const WithSpeechBubbles = () => {
     <Box bg={useColorModeValue('gray.100', 'gray.700')}>
       <Container maxW={'7xl'} py={16} as={Stack} spacing={12}>
         <Stack spacing={0} align={'center'}>
-          <Heading>Commentaire </Heading>
-          <Text>Nous travail sur le monde entier</Text>
+          <Heading>Partager votre Opinion </Heading>
+          <Text>participer au communauter Citizen Workflow.</Text>
         </Stack>
         <Stack
           direction={{ base: 'column', md: 'row' }}
@@ -96,8 +96,7 @@ const WithSpeechBubbles = () => {
             <TestimonialContent>
               <TestimonialHeading>Claire Marie</TestimonialHeading>
               <TestimonialText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor neque
-                sed imperdiet nibh lectus feugiat nunc sem.
+              Citizen Connect a vraiment amélioré la façon dont je m'engage avec ma communauté locale. C'est génial de voir autant d'initiatives citoyennes rassemblées au même endroit!
               </TestimonialText>
             </TestimonialContent>
             <TestimonialAvatar
@@ -105,15 +104,14 @@ const WithSpeechBubbles = () => {
                 'https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80'
               }
               name={'Marseille'}
-              title={'responsable marketing'}
+              title={'Femme aux foyer'}
             />
           </Testimonial>
           <Testimonial>
             <TestimonialContent>
               <TestimonialHeading>Clementine</TestimonialHeading>
               <TestimonialText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor neque
-                sed imperdiet nibh lectus feugiat nunc sem.
+              Le service client de Citezen Connect est exceptionnel! J'ai reçu une réponse rapide à ma question et une assistance personnalisée.
               </TestimonialText>
             </TestimonialContent>
             <TestimonialAvatar
@@ -121,15 +119,14 @@ const WithSpeechBubbles = () => {
                 'https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80'
               }
               name={'Paris'}
-              title={'Designer UI/UX'}
+              title={'Avocat'}
             />
           </Testimonial>
           <Testimonial>
             <TestimonialContent>
               <TestimonialHeading>Manon Stray</TestimonialHeading>
               <TestimonialText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor neque
-                sed imperdiet nibh lectus feugiat nunc sem.
+              Je recommande vivement Citezen Connect à tous ceux qui veulent avoir un impact positif dans leur quartier. C'est une plateforme facile à utiliser et très enrichissante.
               </TestimonialText>
             </TestimonialContent>
             <TestimonialAvatar
@@ -137,7 +134,7 @@ const WithSpeechBubbles = () => {
                 'https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80'
               }
               name={'Dijon'}
-              title={'Database Analyst'}
+              title={'Etudiante'}
             />
           </Testimonial>
         </Stack>
