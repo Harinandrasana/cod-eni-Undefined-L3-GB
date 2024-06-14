@@ -7,10 +7,12 @@ import Services from "../components/Services/Services";
 import ContactPage from "./ContactPage";
 import HelpPage from "./HelpPage";
 import Publicitaire from "./Publicitaire";
+import Accueil from "./Accueil";
 const HomePage = () => {
   return (
-    <div>
+    <div> <Accueil/>
       <Home />
+     
       <Publicitaire/>
       <AboutPage />
       <Services />

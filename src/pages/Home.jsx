@@ -45,17 +45,16 @@ export default function Home() {
                 zIndex: -1,
               }}
             >
-              Write once,
+              Bienvenue,
             </Text>
             <br />
             <Text as={"span"} color={"red.400"}>
-              use everywhere!
+              Sur Citizen Connect!
             </Text>
           </Heading>
           <Text color={"gray.500"}>
-            Snippy is a rich coding snippets app that lets you create your own
-            code snippets, categorize them, and even sync them in the cloud so
-            you can use them anywhere. All that is free!
+            Votre plateforme pour des services gouvernementaux en ligne
+            simplifier. Modernisez vos interactions avec l'e-gouvernance!
           </Text>
           <Stack
             spacing={{ base: 4, sm: 6 }}
@@ -70,7 +69,7 @@ export default function Home() {
               bg={"red.400"}
               _hover={{ bg: "red.500" }}
             >
-              Get started
+              Se connecter
             </Button>
             <Button
               rounded={"full"}
@@ -79,7 +78,7 @@ export default function Home() {
               px={6}
               leftIcon={<PlayIcon h={4} w={4} color={"gray.300"} />}
             >
-              How It Works
+              S'inscrire
             </Button>
           </Stack>
         </Stack>
@@ -126,7 +125,7 @@ export default function Home() {
               w={"100%"}
               h={"100%"}
               src={
-                "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80"
+                "https://dubasque.org/wp-content/uploads/2016/03/fotolia_solidaritc3a9-1024x682.jpg"
               }
             />
           </Box>
