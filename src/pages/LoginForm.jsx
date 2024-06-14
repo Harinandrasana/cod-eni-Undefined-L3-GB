@@ -21,17 +21,17 @@ const LoginForm = () => {
             alt="login-image"
           />
         </div>
-        <div className="flex items-center md:p-8 p-6 bg-white md:rounded-tl-[55px] md:rounded-bl-[55px] h-full">
-          <form className="max-w-lg w-full mx-auto" onSubmit={handleSubmit}>
+        <div className="flex shadow-lg items-center md:p-8 p-6 bg-white md:rounded-tl-[55px] md:rounded-bl-[55px] h-full">
+          <form className="max-w-lg w-full mx-auto shadow-lg p-[100px]" onSubmit={handleSubmit}>
             <div className="mb-12">
-              <h3 className="text-4xl font-extrabold">Sign in</h3>
+              <h3 className="text-4xl font-extrabold uppercase">Se Connecter</h3>
               <p className="text-sm mt-4">
-                Don't have an account{" "}
+               Connecter en toute securité{" "}
                 <a
                   href="javascript:void(0);"
                   className="text-blue-600 font-semibold hover:underline ml-1 whitespace-nowrap"
                 >
-                  Register here
+                  avec Hash
                 </a>
               </p>
             </div>
@@ -43,7 +43,7 @@ const LoginForm = () => {
                   type="text"
                   required
                   className="w-full text-sm border-b border-gray-300 focus:border-[#333] px-2 py-3 outline-none"
-                  placeholder="Enter email"
+                  placeholder="email.email@email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                 />
@@ -79,14 +79,14 @@ const LoginForm = () => {
               </div>
             </div>
             <div className="mt-8">
-              <label className="text-xs block mb-2">Password</label>
+              <label className="text-xs block mb-2">Mot de passe</label>
               <div className="relative flex items-center">
                 <input
                   name="password"
                   type="password"
                   required
                   className="w-full text-sm border-b border-gray-300 focus:border-[#333] px-2 py-3 outline-none"
-                  placeholder="Enter password"
+                  placeholder="************"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                 />
@@ -113,28 +113,34 @@ const LoginForm = () => {
                   className="h-4 w-4 shrink-0 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
                 />
                 <label htmlFor="remember-me" className="ml-3 block text-sm">
-                  Remember me
+                  Se souvenir de moi
                 </label>
               </div>
               <div>
                 <a
                   href="javascript:void(0);"
-                  className="text-blue-600 font-semibold text-sm hover:underline"
+                  className="text-[#1fb6ff] font-size-sm font-semibold text-sm hover:underline"
                 >
-                  Forgot Password?
+                  Mot de passe oublier ?
                 </a>
               </div>
             </div>
             <div className="mt-12">
               <button
                 type="submit"
-                className="w-full shadow-xl py-2.5 px-4 text-sm font-semibold rounded-full text-white bg-[#333] hover:bg-[#222] focus:outline-none"
+                className="uppercase flex flex-grid col-md-2 items-center justify-center relative w-full shadow-xl py-2.5 px-4 text-sm font-semibold rounded-full text-white bg-[#333] hover:bg-[#222] focus:outline-none"
+                style={
+                  {
+                    color:"white",
+
+                  }
+                }
               >
-                Sign in
+                Se Connecter
               </button>
             </div>
             <p className="my-8 text-sm text-gray-400 text-center">
-              or continue with
+             ou continuer avec
             </p>
             <div className="space-x-8 flex justify-center">
               <button type="button" className="border-none outline-none">

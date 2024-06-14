@@ -9,9 +9,12 @@ module.exports = {
       md: '768px',
       lg: '976px',
       xl: '1440px',
+      xs: '600px',
     },
     colors: {
       'blue': '#1fb6ff',
+      'white': '#ffffff',
+
       'purple': '#7e5bef',
       'pink': '#ff49db',
       'orange': '#ff7849',
