@@ -53,7 +53,8 @@ export default function Home() {
             </Text>
           </Heading>
           <Text color={"gray.500"}>
-            Votre plateforme pour des services gouvernementaux en ligne simplifier. Modernisez vos interactions avec l'e-gouvernance!
+            Votre plateforme pour des services gouvernementaux en ligne
+            simplifier. Modernisez vos interactions avec l'e-gouvernance!
           </Text>
           <Stack
             spacing={{ base: 4, sm: 6 }}
@@ -77,7 +78,7 @@ export default function Home() {
               px={6}
               leftIcon={<PlayIcon h={4} w={4} color={"gray.300"} />}
             >
-             S'inscrire
+              S'inscrire
             </Button>
           </Stack>
         </Stack>
@@ -124,7 +125,7 @@ export default function Home() {
               w={"100%"}
               h={"100%"}
               src={
-                "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80"
+                "https://dubasque.org/wp-content/uploads/2016/03/fotolia_solidaritc3a9-1024x682.jpg"
               }
             />
           </Box>
