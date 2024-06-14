@@ -1,12 +1,20 @@
 import React from "react";
-import Welcom from "../components/HomePageContain/Welcom";
-import AboutBanner from "./AboutBanner";
 
+import AboutBanner from "./AboutBanner";
+import Home from "./Home";
+import AboutPage from "./AboutPage";
+import Services from "../components/Services/Services";
+import ContactPage from "./ContactPage";
+import HelpPage from "./HelpPage";
 const HomePage = () => {
   return (
     <div>
-      <Welcom />
-      <AboutBanner/>
+      <Home />
+      <AboutPage />
+      <Services />
+      <ContactPage />
+      <HelpPage />
+      {/* <AboutBanner /> */}
     </div>
   );
 };

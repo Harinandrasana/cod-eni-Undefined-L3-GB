@@ -15,9 +15,8 @@ import {
   IconProps,
   useColorModeValue,
 } from "@chakra-ui/react";
-import AboutBanner from "./AboutBanner";
-import WithSpeechBubbles from "./WithSpeechBubbles";
-export default function AboutPage() {
+
+export default function Home() {
   return (
     <Container maxW={"7xl"}>
       <Stack
@@ -133,14 +132,6 @@ export default function AboutPage() {
           </Box>
         </Flex>
       </Stack>
-<<<<<<< HEAD
-      {/* <Ab outBanner/> */}
-=======
-
-      {/* <AboutBanner/> */}
->>>>>>> 10343e04dbeb2526f52e587d3b205fe81b0cfafb
-      {/* <Comment/> */}
-      <WithSpeechBubbles />
     </Container>
   );
 }
