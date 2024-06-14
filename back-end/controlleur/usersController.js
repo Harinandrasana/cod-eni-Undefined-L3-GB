@@ -16,10 +16,10 @@ class UsersController {
 
     static async Authentification(req, res) {
         try {
-            const username = req.body.username;
+            const email = req.body.email;
             const password = req.body.password;
 
-            const result = await Users.Login(username, password);
+            const result = await Users.Login(email, password);
             if (result && result.length > 0) {
                 res.send(result);
             } else {
