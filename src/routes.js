@@ -10,6 +10,9 @@ import HomePage from "./pages/HomePage"
 import AboutBanner from "./pages/AboutBanner";
 import WithSpeechBubbles from "./pages/WithSpeechBubbles";
 import Home from "./pages/Home";
+import LoginForm from "./pages/LoginForm";
+import SignupForm from "./pages/SignupForm";
+import Publicitaire from "./pages/Publicitaire";
 const router = createBrowserRouter([
     {
         path: "/",
@@ -24,15 +27,15 @@ const router = createBrowserRouter([
             { path: "/services", element: <ServicesPage /> },
             { path: "/contact", element: <ContactPage /> },
             { path: "/about", element: <AboutPage /> },
-<<<<<<< HEAD
             { path: "/about", element: <AboutBanner/>},
             { path: "/withSpeechBubbles", element: <WithSpeechBubbles/>},
           
-=======
             { path: "/about", element: <AboutBanner /> },
             { path: "/withSpeechBubbles", element: <WithSpeechBubbles /> },
             { path: "/Home", element: <Home /> },
->>>>>>> 10343e04dbeb2526f52e587d3b205fe81b0cfafb
+            { path: "/LoginForm", element: <LoginForm/>},
+            { path: "/SignupForm", element: <SignupForm/>},
+            { path: "/Publiciaire", element: <Publicitaire/>}
         ],
     },
 ]);

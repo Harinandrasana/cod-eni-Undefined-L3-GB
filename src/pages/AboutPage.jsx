@@ -133,12 +133,9 @@ export default function AboutPage() {
           </Box>
         </Flex>
       </Stack>
-<<<<<<< HEAD
       {/* <Ab outBanner/> */}
-=======
 
       {/* <AboutBanner/> */}
->>>>>>> 10343e04dbeb2526f52e587d3b205fe81b0cfafb
       {/* <Comment/> */}
       <WithSpeechBubbles />
     </Container>

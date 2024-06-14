@@ -6,10 +6,12 @@ import AboutPage from "./AboutPage";
 import Services from "../components/Services/Services";
 import ContactPage from "./ContactPage";
 import HelpPage from "./HelpPage";
+import Publicitaire from "./Publicitaire";
 const HomePage = () => {
   return (
     <div>
       <Home />
+      <Publicitaire/>
       <AboutPage />
       <Services />
       <ContactPage />
