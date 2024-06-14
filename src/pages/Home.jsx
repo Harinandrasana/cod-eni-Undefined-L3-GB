@@ -45,17 +45,15 @@ export default function Home() {
                 zIndex: -1,
               }}
             >
-              Write once,
+              Bienvinue,
             </Text>
             <br />
             <Text as={"span"} color={"red.400"}>
-              use everywhere!
+              Sur Citizen Connect!
             </Text>
           </Heading>
           <Text color={"gray.500"}>
-            Snippy is a rich coding snippets app that lets you create your own
-            code snippets, categorize them, and even sync them in the cloud so
-            you can use them anywhere. All that is free!
+            Votre plateforme pour des services gouvernementaux en ligne simplifier. Modernisez vos interactions avec l'e-gouvernance!
           </Text>
           <Stack
             spacing={{ base: 4, sm: 6 }}
@@ -70,7 +68,7 @@ export default function Home() {
               bg={"red.400"}
               _hover={{ bg: "red.500" }}
             >
-              Get started
+              Se connecter
             </Button>
             <Button
               rounded={"full"}
@@ -79,7 +77,7 @@ export default function Home() {
               px={6}
               leftIcon={<PlayIcon h={4} w={4} color={"gray.300"} />}
             >
-              How It Works
+             S'inscrire
             </Button>
           </Stack>
         </Stack>

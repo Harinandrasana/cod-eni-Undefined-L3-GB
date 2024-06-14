@@ -13,6 +13,7 @@ import Home from "./pages/Home";
 import LoginForm from "./pages/LoginForm";
 import SignupForm from "./pages/SignupForm";
 import Publicitaire from "./pages/Publicitaire";
+import Accueil from "./pages/Accueil";
 const router = createBrowserRouter([
     {
         path: "/",
@@ -35,7 +36,8 @@ const router = createBrowserRouter([
             { path: "/Home", element: <Home /> },
             { path: "/LoginForm", element: <LoginForm/>},
             { path: "/SignupForm", element: <SignupForm/>},
-            { path: "/Publiciaire", element: <Publicitaire/>}
+            { path: "/Publiciaire", element: <Publicitaire/>},
+            { path: "/Accueil", element: <Accueil/>}
         ],
     },
 ]);
