@@ -4,8 +4,7 @@ import React from "react";
 const ConnectionButton = () => {
   return (
     <div>
-      <Button>Se connecter</Button>
-
+      <Button p={3}>Se connecter</Button>
     </div>
   );
 };

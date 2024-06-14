@@ -8,8 +8,7 @@ const useLogin = () => {
             console.log("the response :", response.data[0].username);
             if (response.data) {
                 localStorage.setItem("users", response.data[0].username);
-                // window.location.reload();
-                alert("connection reussie")
+                window.location.reload();
             }
         } catch (err) {
             console.log(err);
