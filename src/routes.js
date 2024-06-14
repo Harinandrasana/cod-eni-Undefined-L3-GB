@@ -6,7 +6,13 @@ import HelpPage from "./pages/HelpPage";
 import ServicesPage from "./pages/ServicesPage";
 import ContactPage from "./pages/ContactPage";
 import AboutPage from "./pages/AboutPage";
-
+import HomePage from "./pages/HomePage"
+import AboutBanner from "./pages/AboutBanner";
+import WithSpeechBubbles from "./pages/WithSpeechBubbles";
+import Home from "./pages/Home";
+import LoginForm from "./pages/LoginForm";
+import SignupForm from "./pages/SignupForm";
+import Publicitaire from "./pages/Publicitaire";
 const router = createBrowserRouter([
     {
         path: "/",
@@ -15,12 +21,21 @@ const router = createBrowserRouter([
         children: [
             {
                 index: true,
-                element: <App />,
+                element: <HomePage />,
             },
             { path: "/help", element: <HelpPage /> },
             { path: "/services", element: <ServicesPage /> },
             { path: "/contact", element: <ContactPage /> },
             { path: "/about", element: <AboutPage /> },
+            { path: "/about", element: <AboutBanner/>},
+            { path: "/withSpeechBubbles", element: <WithSpeechBubbles/>},
+          
+            { path: "/about", element: <AboutBanner /> },
+            { path: "/withSpeechBubbles", element: <WithSpeechBubbles /> },
+            { path: "/Home", element: <Home /> },
+            { path: "/LoginForm", element: <LoginForm/>},
+            { path: "/SignupForm", element: <SignupForm/>},
+            { path: "/Publiciaire", element: <Publicitaire/>}
         ],
     },
 ]);
