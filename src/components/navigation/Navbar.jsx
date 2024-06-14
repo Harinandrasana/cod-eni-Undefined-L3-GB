@@ -15,6 +15,7 @@ const NavBar = () => {
             alt="Logo"
             width={"auto"}
             objectFit="cover"
+<<<<<<< HEAD
             height={55}
           /> */}
           
@@ -22,6 +23,11 @@ const NavBar = () => {
           fontSize={30}>
             Citezen Connect
           </Box>
+=======
+            height={111}
+            paddingBottom={2}
+          />
+>>>>>>> d9982495700b43cd0e9ed91c2ca33d312f87822c
         </Link>
       </Box>
       <Flex flex="1" justifyContent="center" p={2}>

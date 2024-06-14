@@ -28,6 +28,7 @@ const router = createBrowserRouter([
             { path: "/services", element: <ServicesPage /> },
             { path: "/contact", element: <ContactPage /> },
             { path: "/about", element: <AboutPage /> },
+<<<<<<< HEAD
             { path: "/about", element: <AboutBanner/>},
             { path: "/withSpeechBubbles", element: <WithSpeechBubbles/>},
           
@@ -38,6 +39,14 @@ const router = createBrowserRouter([
             { path: "/SignupForm", element: <SignupForm/>},
             { path: "/Publiciaire", element: <Publicitaire/>},
             { path: "/Accueil", element: <Accueil/>}
+=======
+            { path: "/about", element: <AboutBanner /> },
+            { path: "/withSpeechBubbles", element: <WithSpeechBubbles /> },
+
+            { path: "/about", element: <AboutBanner /> },
+            { path: "/withSpeechBubbles", element: <WithSpeechBubbles /> },
+            { path: "/Home", element: <Home /> },
+>>>>>>> d9982495700b43cd0e9ed91c2ca33d312f87822c
         ],
     },
 ]);
