@@ -28,16 +28,16 @@ const router = createBrowserRouter([
             { path: "/services", element: <ServicesPage /> },
             { path: "/contact", element: <ContactPage /> },
             { path: "/about", element: <AboutPage /> },
-            { path: "/about", element: <AboutBanner/>},
-            { path: "/withSpeechBubbles", element: <WithSpeechBubbles/>},
-          
+            { path: "/about", element: <AboutBanner /> },
+            { path: "/withSpeechBubbles", element: <WithSpeechBubbles /> },
+
             { path: "/about", element: <AboutBanner /> },
             { path: "/withSpeechBubbles", element: <WithSpeechBubbles /> },
             { path: "/Home", element: <Home /> },
-            { path: "/LoginForm", element: <LoginForm/>},
-            { path: "/SignupForm", element: <SignupForm/>},
-            { path: "/Publiciaire", element: <Publicitaire/>},
-            { path: "/Accueil", element: <Accueil/>}
+            { path: "/LoginForm", element: <LoginForm /> },
+            { path: "/SignupForm", element: <SignupForm /> },
+            { path: "/Publiciaire", element: <Publicitaire /> },
+            { path: "/Accueil", element: <Accueil /> }
         ],
     },
 ]);

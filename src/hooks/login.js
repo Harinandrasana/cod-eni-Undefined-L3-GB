@@ -1,6 +1,4 @@
 import apiClient from "../services/api-client";
-import useNotification from "./useNotification";
-
 
 const useLogin = () => {
     const login = async (values) => {
@@ -10,7 +8,8 @@ const useLogin = () => {
             console.log("the response :", response.data[0].username);
             if (response.data) {
                 localStorage.setItem("users", response.data[0].username);
-                window.location.reload();
+                // window.location.reload();
+                alert("connection reussie")
             }
         } catch (err) {
             console.log(err);

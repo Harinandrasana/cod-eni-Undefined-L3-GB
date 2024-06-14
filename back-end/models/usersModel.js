@@ -11,9 +11,9 @@ class Users {
         })
     };
 
-    static async Login(username, password) {
+    static async Login(email, password) {
         return new Promise(resolve => {
-            db.query("SELECT * FROM citizen.user WHERE username=? AND passWord=?", [username, password], (err, result) => {
+            db.query("SELECT * FROM citizen.user WHERE email=? AND passWord=?", [email, password], (err, result) => {
                 if (!err)
                     resolve(result);
             });
