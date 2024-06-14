@@ -22,38 +22,34 @@ const TestFooter = () => {
       <div>
         <h4 class="text-lg font-bold mb-6 text-gray-800">Services</h4>
         <ul class="space-y-4">
-          <li><a href="javascript:void(0)" class="text-gray-500 hover:text-gray-800 text-[15px]">Web
-            Development</a></li>
-          <li><a href="javascript:void(0)" class="text-gray-500 hover:text-gray-800 text-[15px]">Mobile App
-            Development</a></li>
-          <li><a href="javascript:void(0)" class="text-gray-500 hover:text-gray-800 text-[15px]">UI/UX
-            Design</a></li>
-          <li><a href="javascript:void(0)" class="text-gray-500 hover:text-gray-800 text-[15px]">Digital Marketing</a></li>
+          <li><a href="javascript:void(0)" class="text-gray-500 hover:text-gray-800 text-[15px]">Demmande d'acte d'etat civil</a></li>
+          <li><a href="javascript:void(0)" class="text-gray-500 hover:text-gray-800 text-[15px]">Demande de permis</a></li>
+          <li><a href="javascript:void(0)" class="text-gray-500 hover:text-gray-800 text-[15px]">Reservations de rendez-vous</a></li>
+          <li><a href="javascript:void(0)" class="text-gray-500 hover:text-gray-800 text-[15px]">Demmande d'acte de naissance</a></li>
         </ul>
       </div>
 
       <div>
         <h4 class="text-lg font-bold mb-6 text-gray-800">Resources</h4>
         <ul class="space-y-4">
-          <li><a href="javascript:void(0)" class="text-gray-500 hover:text-gray-800 text-[15px]">Webinars</a>
+          <li><a href="javascript:void(0)" class="text-gray-500 hover:text-gray-800 text-[15px]">Accueil</a>
           </li>
-          <li><a href="javascript:void(0)" class="text-gray-500 hover:text-gray-800 text-[15px]">Ebooks</a>
+          <li><a href="javascript:void(0)" class="text-gray-500 hover:text-gray-800 text-[15px]">Aide</a>
           </li>
-          <li><a href="javascript:void(0)" class="text-gray-500 hover:text-gray-800 text-[15px]">Templates</a>
+          <li><a href="javascript:void(0)" class="text-gray-500 hover:text-gray-800 text-[15px]"> Services</a>
           </li>
-          <li><a href="javascript:void(0)" class="text-gray-500 hover:text-gray-800 text-[15px]">Tutorials</a></li>
+          <li><a href="javascript:void(0)" class="text-gray-500 hover:text-gray-800 text-[15px]">A propos</a></li>
         </ul>
       </div>
 
       <div>
-        <h4 class="text-lg font-bold mb-6 text-gray-800">About Us</h4>
+        <h4 class="text-lg font-bold mb-6 text-gray-800">FAQ'S</h4>
         <ul class="space-y-4">
-          <li><a href="javascript:void(0)" class="text-gray-500 hover:text-gray-800 text-[15px]">Our Story</a>
+          <li><a href="javascript:void(0)" class="text-gray-500 hover:text-gray-800 text-[15px]">citizenconnect.mg</a>
           </li>
-          <li><a href="javascript:void(0)" class="text-gray-500 hover:text-gray-800 text-[15px]">Mission and
-            Values</a></li>
-          <li><a href="javascript:void(0)" class="text-gray-500 hover:text-gray-800 text-[15px]">Team</a></li>
-          <li><a href="javascript:void(0)" class="text-gray-500 hover:text-gray-800 text-[15px]">Testimonials</a></li>
+          <li><a href="javascript:void(0)" class="text-gray-500 hover:text-gray-800 text-[15px]">Termes & conditions</a></li>
+          <li><a href="javascript:void(0)" class="text-gray-500 hover:text-gray-800 text-[15px]">Equipes devs</a></li>
+          <li><a href="javascript:void(0)" class="text-gray-500 hover:text-gray-800 text-[15px]">Commentaire</a></li>
         </ul>
       </div>
     </div>
