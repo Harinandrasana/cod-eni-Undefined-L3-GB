@@ -9,6 +9,7 @@ import AboutPage from "./pages/AboutPage";
 import HomePage from "./pages/HomePage"
 import AboutBanner from "./pages/AboutBanner";
 import WithSpeechBubbles from "./pages/WithSpeechBubbles";
+import Home from "./pages/Home";
 const router = createBrowserRouter([
     {
         path: "/",
@@ -23,8 +24,9 @@ const router = createBrowserRouter([
             { path: "/services", element: <ServicesPage /> },
             { path: "/contact", element: <ContactPage /> },
             { path: "/about", element: <AboutPage /> },
-            { path: "/about", element: <AboutBanner/>},
-            { path: "/withSpeechBubbles", element: <WithSpeechBubbles/>}
+            { path: "/about", element: <AboutBanner /> },
+            { path: "/withSpeechBubbles", element: <WithSpeechBubbles /> },
+            { path: "/Home", element: <Home /> },
         ],
     },
 ]);
