@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import useRegister from "../hooks/register";
+import useLogin from "../hooks/login";
 
 const SignupForm = () => {
   const { register } = useRegister();
+  const { login } = useLogin();
   const [formValues, setFormValues] = useState({
     username: "",
     email: "",
@@ -22,6 +24,7 @@ const SignupForm = () => {
     try {
       const data = await register(formValues);
       console.log("Registration successful:", data);
+      await login({ email: formValues.email, password: formValues.password });
       // Handle successful registration (e.g., redirect to login page)
     } catch (error) {
       console.error("Registration failed:", error);
@@ -40,10 +43,13 @@ const SignupForm = () => {
           />
         </div>
         <div className=" shadow-lg text-black flex items-center md:p-8 p-6 bg-white px-[150px] h-full lg:w-11/12 lg:ml-auto">
-          <form className=" flex flex-col justify-center max-w-lg w-full h-full mx-auto px-[150px]" onSubmit={handleSubmit}>
+          <form
+            className=" flex flex-col justify-center max-w-lg w-full h-full mx-auto px-[150px]"
+            onSubmit={handleSubmit}
+          >
             <div className="mb-12">
               <h3 className="uppercase text-lg font-bold text-yellow-400">
-               Creer un Compte :
+                Creer un Compte :
               </h3>
             </div>
             <div>

@@ -15,6 +15,7 @@ import SignupForm from "./pages/SignupForm";
 import Publicitaire from "./pages/Publicitaire";
 import Accueil from "./pages/Accueil";
 import ServiceDetails from "./pages/ServiceDetails";
+import { connectedUser } from "./constant";
 const router = createBrowserRouter([
     {
         path: "/",
@@ -35,8 +36,8 @@ const router = createBrowserRouter([
             { path: "/about", element: <AboutBanner /> },
             { path: "/withSpeechBubbles", element: <WithSpeechBubbles /> },
             { path: "/Home", element: <Home /> },
-            { path: "/LoginForm", element: <LoginForm /> },
-            { path: "/SignupForm", element: <SignupForm /> },
+            { path: "/LoginForm", element: connectedUser === null ? <LoginForm /> : <ServicesPage /> },
+            { path: "/SignupForm", element: connectedUser === null ? <SignupForm /> : <ServicesPage /> },
             { path: "/Publiciaire", element: <Publicitaire /> },
             { path: "/Accueil", element: <Accueil /> },
             { path: "/services/:id", element: <ServiceDetails /> }
