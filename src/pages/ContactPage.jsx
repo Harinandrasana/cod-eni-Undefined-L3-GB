@@ -19,7 +19,7 @@ const ContactPage = () => {
             <Text fontSize={40}>Contacter Nous</Text>
           </h1>
           <p class="text-sm text-gray-500 mt-4">
-            Have some big idea or brand to develop and need help?
+           Avez-vous des avis pour notre site web ?
           </p>
         </div>
 
@@ -27,7 +27,8 @@ const ContactPage = () => {
           <div class="bg-[#0090ab] rounded-lg p-6 h-full max-lg:order-1">
             <h2 class="text-xl text-white">Contact Information</h2>
             <p class="text-sm text-gray-300 mt-4">
-              Have some big idea or brand to develop and need help?
+            Voici les contact rapides des services clients :
+
             </p>
 
             <ul class="mt-16 space-y-8">
@@ -48,7 +49,7 @@ const ContactPage = () => {
                   href="javascript:void(0)"
                   class="text-white text-sm text-gray-500 ml-4"
                 >
-                  info@example.com
+                  citizen@yopmail.fr
                 </a>
               </li>
               <li class="flex items-center">
@@ -68,7 +69,7 @@ const ContactPage = () => {
                   href="javascript:void(0)"
                   class="text-white text-sm text-gray-500 ml-4"
                 >
-                  +158 996 888
+                  +261 34 18 651 24
                 </a>
               </li>
               <li class="flex items-center">
@@ -152,8 +153,8 @@ const ContactPage = () => {
                 <div class="relative flex items-center">
                   <input
                     type="text"
-                    placeholder="First Name"
-                    class="px-2 py-3 bg-white w-full text-sm text-gray-800 border-b border-gray-300 focus:border-blue-500 outline-none"
+                    placeholder="Nom"
+                    class="px-2 py-3 bg-white w-full text-sm text-black border-b border-gray-300 focus:border-blue-500 outline-none"
                   />
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -178,8 +179,8 @@ const ContactPage = () => {
                 <div class="relative flex items-center">
                   <input
                     type="text"
-                    placeholder="Last Name"
-                    class="px-2 py-3 bg-white w-full text-sm text-gray-800 border-b border-gray-300 focus:border-blue-500 outline-none"
+                    placeholder="Prenom"
+                    class="px-2 py-3 bg-white w-full text-sm text-black border-b border-gray-300 focus:border-blue-500 outline-none"
                   />
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -204,7 +205,7 @@ const ContactPage = () => {
                 <div class="relative flex items-center">
                   <input
                     type="number"
-                    placeholder="Phone No."
+                    placeholder="Numero"
                     class="px-2 py-3 bg-white text-black w-full text-sm text-gray-800 border-b border-gray-300 focus:border-blue-500 outline-none"
                   />
                   <svg
@@ -261,7 +262,7 @@ const ContactPage = () => {
 
                 <div class="relative flex items-center sm:col-span-2">
                   <textarea
-                    placeholder="Write Message"
+                    placeholder="Votre message par ici"
                     class="px-2 pt-3 bg-white text-black w-full text-sm text-gray-800 border-b border-gray-300 focus:border-blue-500 outline-none"
                   ></textarea>
                   <svg
@@ -299,7 +300,7 @@ const ContactPage = () => {
                 </div>
 
                 <div class="col-span-full">
-                  <h6 class="text-sm text-gray-800">Select Subject</h6>
+                  <h6 class="text-sm text-black">Type de Message</h6>
                   <div class="flex max-lg:flex-col gap-6 mt-4">
                     <div class="flex items-center">
                       <input
@@ -311,11 +312,11 @@ const ContactPage = () => {
                       />
                       <label
                         for="radio1"
-                        class="relative p-0.5 flex items-center justify-center shrink-0 peer-checked:before:hidden before:block before:absolute before:w-full before:h-full before:bg-white w-5 h-5 cursor-pointer border-2 border-[#011c2b] rounded-full overflow-hidden"
+                        class="text-black relative p-0.5 flex items-center justify-center shrink-0 peer-checked:before:hidden before:block before:absolute before:w-full before:h-full before:bg-white w-5 h-5 cursor-pointer border-2 border-[#011c2b] rounded-full overflow-hidden"
                       >
                         <span class="border-[4px] border-[#011c2b] rounded-full w-full h-full"></span>
                       </label>
-                      <p class="text-sm text-gray-500 ml-4">General Inquiry</p>
+                      <p class="text-sm text-black ml-4">Securisé</p>
                     </div>
 
                     <div class="flex items-center">
@@ -331,8 +332,8 @@ const ContactPage = () => {
                       >
                         <span class="border-[4px] border-[#011c2b] rounded-full w-full h-full"></span>
                       </label>
-                      <p class="text-sm text-gray-500 ml-4">
-                        Technical Support
+                      <p class="text-sm text-black ml-4">
+                        Fiable
                       </p>
                     </div>
 
@@ -349,13 +350,13 @@ const ContactPage = () => {
                       >
                         <span class="border-[4px] border-[#011c2b] rounded-full w-full h-full"></span>
                       </label>
-                      <p class="text-sm text-gray-500 ml-4">Website Feedback</p>
+                      <p class="text-sm text-black ml-4">Rapide</p>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <Button className="absolute ml-[auto] mt-12 flex items-center justify-center text-sm lg:ml-auto max-lg:w-full rounded-lg px-4 py-3 tracking-wide text-white bg-blue-600 hover:bg-blue-700">
+              <Button className="hover:bg-black hover:uppercase hover:animate-bounce absolute ml-[auto] mt-12 flex items-center justify-center text-sm lg:ml-auto max-lg:w-full rounded-lg px-4 py-3 tracking-wide text-white bg-blue-600 hover:bg-black ">
                 ENVOYER
               </Button>
             </form>
