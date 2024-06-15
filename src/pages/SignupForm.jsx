@@ -162,7 +162,7 @@ const SignupForm = () => {
             <div className="mt-12">
               <button
                 type="submit"
-                className="hover:bg-black hover:text-white hover:animate-bounce w-max shadow-xl py-2.5 px-8 text-sm font-semibold rounded-md bg-transparent text-yellow-400 border border-yellow-400 focus:outline-none"
+                className="hover:bg-[black] hover:text-white hover:animate-bounce w-max shadow-xl py-2.5 px-8 text-sm font-semibold rounded-md bg-[#00304c] text-white border border-yellow-400 focus:outline-none"
               >
                 S'inscrire
               </button>
