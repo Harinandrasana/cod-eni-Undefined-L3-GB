@@ -41,7 +41,8 @@ const ServiceDetails = () => {
 
 <Stack spacing={6} px={4} py={8} maxW="600px" mx="auto">
 <Heading as="h1" size="xl">
-  Paiement des impôts en ligne
+  {/* Paiement des impôts en ligne */}
+{service.name}
 </Heading>
 
 <Box>
