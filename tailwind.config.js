@@ -14,6 +14,7 @@ module.exports = {
     colors: {
       'blue': '#1fb6ff',
       'white': '#ffffff',
+      'black': '#000000',
 
       'purple': '#7e5bef',
       'pink': '#ff49db',
@@ -29,6 +30,7 @@ module.exports = {
       serif: ['Merriweather', 'serif'],
     },
     fontSize: {
+      xs: ['7px', '10px'],
       sm: ['14px', '20px'],
       base: ['16px', '24px'],
       lg: ['20px', '28px'],

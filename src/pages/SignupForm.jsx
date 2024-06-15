@@ -39,22 +39,22 @@ const SignupForm = () => {
             alt="login-image"
           />
         </div>
-        <div className="flex items-center md:p-8 p-6 bg-[#0C172C] h-full lg:w-11/12 lg:ml-auto">
-          <form className="max-w-lg w-full mx-auto" onSubmit={handleSubmit}>
+        <div className=" shadow:lg text-black flex items-center md:p-8 p-6 bg-white px-[150px] h-full lg:w-11/12 lg:ml-auto">
+          <form className="flex flex-col justify-center max-w-lg w-full h-full mx-auto px-[150px]" onSubmit={handleSubmit}>
             <div className="mb-12">
-              <h3 className="text-3xl font-bold text-yellow-400">
-                Create an account
+              <h3 className="uppercase text-lg font-bold text-yellow-400">
+               Creer un Compte :
               </h3>
             </div>
             <div>
-              <label className="text-xs block mb-2">Username</label>
+              <label className="text-xm block mb-2">Nom</label>
               <div className="relative flex items-center">
                 <input
                   name="username"
                   type="text"
                   required
                   className="w-full bg-transparent text-sm border-b border-gray-300 focus:border-yellow-400 px-2 py-3 outline-none"
-                  placeholder="Enter username"
+                  placeholder="Nom Complet"
                   value={formValues.username}
                   onChange={handleChange}
                 />
@@ -74,14 +74,14 @@ const SignupForm = () => {
               </div>
             </div>
             <div className="mt-10">
-              <label className="text-xs block mb-2">Email</label>
+              <label className="text-xm block mb-2">Email</label>
               <div className="relative flex items-center">
                 <input
                   name="email"
                   type="text"
                   required
                   className="w-full bg-transparent text-sm border-b border-gray-300 focus:border-yellow-400 px-2 py-3 outline-none"
-                  placeholder="Enter email"
+                  placeholder="email@example.example"
                   value={formValues.email}
                   onChange={handleChange}
                 />
@@ -117,14 +117,14 @@ const SignupForm = () => {
               </div>
             </div>
             <div className="mt-10">
-              <label className="text-xs block mb-2">Password</label>
+              <label className="text-xm block mb-2">Mot de passe</label>
               <div className="relative flex items-center">
                 <input
                   name="password"
                   type="password"
                   required
                   className="w-full bg-transparent text-sm border-b border-gray-300 focus:border-yellow-400 px-2 py-3 outline-none"
-                  placeholder="Enter password"
+                  placeholder="********"
                   value={formValues.password}
                   onChange={handleChange}
                 />
@@ -150,21 +150,21 @@ const SignupForm = () => {
                 className="h-4 w-4 shrink-0 rounded"
               />
               <label htmlFor="remember-me" className="ml-3 block text-sm">
-                I accept the{" "}
+                J'accepte les{" "}
                 <a
                   href="javascript:void(0);"
-                  className="text-yellow-500 font-semibold hover:underline ml-1"
+                  className="text-blue text-xs font-semibold hover:underline ml-1"
                 >
-                  Terms and Conditions
+                  Termes & Conditions
                 </a>
               </label>
             </div>
-            <div className="mt-12">
+            {/* <div className="mt-12">
               <button
                 type="submit"
                 className="w-max shadow-xl py-2.5 px-8 text-sm font-semibold rounded-md bg-transparent text-yellow-400 border border-yellow-400 focus:outline-none"
               >
-                Register
+                S'inscrire
               </button>
               <p className="text-sm mt-8">
                 Already have an account?{" "}
@@ -175,7 +175,7 @@ const SignupForm = () => {
                   Login here
                 </a>
               </p>
-            </div>
+            </div> */}
           </form>
         </div>
       </div>
