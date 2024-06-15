@@ -1,14 +1,31 @@
 import React, { useState } from "react";
 import useLogin from "../hooks/login";
+import { useNavigate } from "react-router-dom";
+import useNotification from "../hooks/useNotification";
 
 const LoginForm = () => {
   const { login } = useLogin();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
+  const { displayToast } = useNotification();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await login({ email, password });
+    try {
+      const success = await login({ email, password });
+      if (success) {
+        navigate("/services");
+        window.location.reload();
+        displayToast("success", "Connexion réussie");
+      } else {
+        navigate("/services");
+        displayToast("success", "Connexion réussie");
+      }
+    } catch (error) {
+      console.error("Login error:", error);
+      displayToast("error", "Erreur lors de la connexion");
+    }
   };
 
   return (
@@ -22,11 +39,14 @@ const LoginForm = () => {
           />
         </div>
         <div className="flex shadow-lg items-center md:p-8 p-6 bg-white md:rounded-tl-[55px] md:rounded-bl-[55px] h-full">
-          <form className="max-w-lg w-full mx-auto shadow-lg p-[100px]" onSubmit={handleSubmit}>
+          <form
+            className="max-w-lg w-full mx-auto p-[100px]"
+            onSubmit={handleSubmit}
+          >
             <div className="mb-12">
               <h3 className="text-lg font-extrabold uppercase">Se Connecter</h3>
               <p className="text-sm mt-4">
-               Connecter en toute securité{" "}
+                Connecter en toute securité{" "}
                 <a
                   href="javascript:void(0);"
                   className="text-blue-600 font-semibold hover:underline ml-1 whitespace-nowrap"
@@ -129,18 +149,15 @@ const LoginForm = () => {
               <button
                 type="submit"
                 className="hover:animate-bounce hover:rounded-lg hover:px-[50px] duration-300 hover:uppercase flex flex-grid col-md-2 items-center justify-center relative w-full shadow-xl py-2.5 px-4 text-sm font-semibold rounded-md text-white bg-[#333] hover:bg-[#222] focus:outline-none"
-                style={
-                  {
-                    color:"white",
-
-                  }
-                }
+                style={{
+                  color: "white",
+                }}
               >
                 Se Connecter
               </button>
             </div>
             <p className="my-8 text-sm text-gray-400 text-center">
-             ou continuer avec
+              ou continuer avec
             </p>
             <div className="space-x-8 flex justify-center">
               <button type="button" className="border-none outline-none">

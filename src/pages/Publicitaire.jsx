@@ -1,7 +1,7 @@
 import React from "react";
 const Publicitaire = () => {
 return(
-    <div class="font-sans bg-white text-[#333] py-12 px-4 bg-gradient-to-r from-white via-[#E4FE66] to-[#55F5A3]">
+    <div class="font-sans bg-white text-[#333] py-12 px-4 bg-gradient-to-r from-white via-[#d9fdff] via-[#E4FE66] to-[#ffffff]">
     <div class="max-w-7xl max-md:max-w-md mx-auto max-md:text-center">
       <h2 class="lg:text-6xl md:text-5xl text-3xl font-extrabold lg:!leading-[64px] md:max-w-4xl">Architecture robuste et fiables</h2>
       <div class="grid md:grid-cols-2 gap-12 mt-8">

@@ -16,8 +16,42 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use("/api", route);
 
+require('dotenv').config();
+// require('nodemailer').config();
+const nodemailer = require('nodemailer');
+const transporter = nodemailer.createTransport({
+    service: 'gmail', 
+    auth: {
+      user: process.env.EMAIL_USER, 
+      pass: process.env.EMAIL_PASS
+    }
+  });
 
 
+
+  app.post('/send-email', (req, res) => {
+    const { name, email, message } = req.body;
+  
+    const mailOptions = {
+      from: process.env.EMAIL_USER, 
+      to: 'mihajamahefaandy@gmail.com',
+      subject: 'Contact Form Submission',
+      text: `Name: ${name}\nRename: ${rename}\nNum: ${num}\nEmail: ${email}\nMessage: ${message}`
+    };
+  
+    transporter.sendMail(mailOptions, (error, info) => {
+      if (error) {
+        console.error('Error sending email:', error);
+        res.status(500).send('Error sending email');
+      } else {
+        console.log('Email sent:', info.response);
+        res.status(200).send('Email envoyer avec success');
+      }
+    });
+  });
+
+  
 app.listen(port, () => {
     console.log(`le serveur utilise le port ${port}`);
 });
+

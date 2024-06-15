@@ -10,7 +10,7 @@ import theme from "./theme";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ChakraProvider theme={theme}>
+    <ChakraProvider theme={theme} toastOptions={{ defaultOptions: { position: 'bottom-right' } }}>
       <RouterProvider router={router} />
     </ChakraProvider>
   </React.StrictMode>

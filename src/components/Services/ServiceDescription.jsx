@@ -3,6 +3,7 @@ import { Text, Box, Button } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
 import { Link } from "react-router-dom";
+import { connectedUser } from "../../constant";
 
 const ServiceDescription = ({ text, id }) => {
   const maxLength = 335; // Définir la longueur maximale du texte à afficher avant les points de suspension
@@ -28,8 +29,10 @@ const ServiceDescription = ({ text, id }) => {
         <Text mb={2} maxW={400}>
           {text}
         </Text>
-        <Link to={`/services/${id}`}>
-          <Button mt={10}>Plus de détails</Button>
+        <Link to={connectedUser !== null ? `/services/${id}` : "/LoginForm"}>
+          <Button bg="red" p={2} disabled={!connectedUser} mt={10}>
+            Plus de détails
+          </Button>
         </Link>
       </motion.h1>
     </Box>

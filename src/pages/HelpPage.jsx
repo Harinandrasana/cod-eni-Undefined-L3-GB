@@ -10,6 +10,7 @@ import {
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
+import { Link } from "react-router-dom";
 
 const Illustration = (props: IconProps) => {
   return (
@@ -866,18 +867,23 @@ export default function HelpPage() {
             optimale.
           </Text>
           <Stack spacing={6} direction={"row"}>
+            <Link to="/services">
             <Button
               rounded={"full"}
               px={6}
               colorScheme={"orange"}
               bg={"orange.400"}
               _hover={{ bg: "orange.500" }}
+              
             >
               Voir les services +
-            </Button>
-            <Button rounded={"full"} px={6}>
+            </Button></Link>
+           
+            <Link to="/about">
+             <Button rounded={"full"} px={6}>
               Revenir en Arriere
-            </Button>
+            </Button></Link>
+           
           </Stack>
           <Flex w={"full"}>
             <Illustration

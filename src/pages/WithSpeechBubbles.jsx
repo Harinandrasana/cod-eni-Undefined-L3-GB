@@ -101,7 +101,7 @@ const WithSpeechBubbles = () => {
             </TestimonialContent>
             <TestimonialAvatar
               src={
-                'https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80'
+                'https://img.freepik.com/photos-gratuite/photo-portrait_144627-46580.jpg?t=st=1718425963~exp=1718429563~hmac=dd50c075e688a669f449a12a59ebd9d207157663ce3971af3d14a71a22f6ccc1&w=740'
               }
               name={'Marseille'}
               title={'Femme aux foyer'}
@@ -131,10 +131,10 @@ const WithSpeechBubbles = () => {
             </TestimonialContent>
             <TestimonialAvatar
               src={
-                'https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80'
+                'https://img.freepik.com/photos-gratuite/homme-dans-verres-transparents-prenant-selfie-isole-mur-blanc_231208-2306.jpg?t=st=1718426069~exp=1718429669~hmac=15eaf602ef2ae42f43a3d060edfe1d992ff99e3d4c674cf6bcd1c4b254e1acbc&w=1380'
               }
               name={'Dijon'}
-              title={'Etudiante'}
+              title={'Etudiant'}
             />
           </Testimonial>
         </Stack>
