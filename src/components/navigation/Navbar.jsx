@@ -8,7 +8,7 @@ import {
   Badge,
   Avatar,
   useColorModeValue,
-  Stack
+  Stack,
 } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import React from "react";
@@ -17,7 +17,6 @@ import ConnectionButton from "./ConnectionButton";
 import InscriptionButton from "./InscriptionButton";
 import { connectedUser } from "../../constant";
 import { FaUser } from "react-icons/fa"; // Importing FaUser from react-icons
-
 
 const NavBar = () => {
   console.log("L'utilisateur connecté est", connectedUser);
@@ -28,18 +27,21 @@ const NavBar = () => {
   };
   const ProfileAvatar = ({ src, name, title }) => {
     return (
-      <Flex align={'center'} mt={8} direction={'column'}>
+      <Flex align={"center"} mt={8} direction={"column"}>
         <Avatar src={src} mb={2} />
-        <Stack spacing={-1} align={'center'}>
+        <Stack spacing={-1} align={"center"}>
           <Text fontWeight={600}>{name}</Text>
-          <Text fontSize={'xs'} color={useColorModeValue('gray.600', 'gray.400')}>
+          <Text
+            fontSize={"xs"}
+            color={useColorModeValue("gray.600", "gray.400")}
+          >
             {title}
           </Text>
         </Stack>
       </Flex>
     );
   };
-  
+
   return (
     <HStack spacing={4} align="center">
       <Box pb={5}>
@@ -73,13 +75,11 @@ const NavBar = () => {
       ) : (
         <HStack spacing={2} align="center">
           <ProfileAvatar
-             src={
-              'https://img.freepik.com/photos-gratuite/portrait-homme-sensible_23-2149444507.jpg?t=st=1718427102~exp=1718430702~hmac=e71dd5c0aaa1f513b7a5e5fa1b666f7b8461528a7e02706e96e6a4906989a645&w=1380'
+            src={
+              "https://img.freepik.com/photos-gratuite/portrait-homme-sensible_23-2149444507.jpg?t=st=1718427102~exp=1718430702~hmac=e71dd5c0aaa1f513b7a5e5fa1b666f7b8461528a7e02706e96e6a4906989a645&w=1380"
             }
             name={connectedUser}
-          >
-
-          </ProfileAvatar>
+          ></ProfileAvatar>
           <Button onClick={disconnect}>Disconnect</Button>
         </HStack>
       )}
