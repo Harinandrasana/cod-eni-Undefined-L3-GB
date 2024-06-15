@@ -22,7 +22,7 @@ const LoginForm = () => {
           />
         </div>
         <div className="flex shadow-lg items-center md:p-8 p-6 bg-white md:rounded-tl-[55px] md:rounded-bl-[55px] h-full">
-          <form className="max-w-lg w-full mx-auto shadow-lg p-[100px]" onSubmit={handleSubmit}>
+          <form className="max-w-lg w-full mx-auto p-[100px]" onSubmit={handleSubmit}>
             <div className="mb-12">
               <h3 className="text-lg font-extrabold uppercase">Se Connecter</h3>
               <p className="text-sm mt-4">

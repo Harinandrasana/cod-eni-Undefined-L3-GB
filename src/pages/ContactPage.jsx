@@ -1,10 +1,50 @@
 import { Button, Text } from "@chakra-ui/react";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { fadeIn } from "../variants";
 import { motion } from "framer-motion";
 
 const ContactPage = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    rename:'',
+    num:'',
+    email: '',
+    message: ''
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch('http://localhost:5000/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      });
+
+      if (response.ok) {
+        alert('Email sent successfully');
+      } else {
+        alert('Failed to send email');
+      }
+    } catch (error) {
+      console.error('Error sending email:', error);
+      alert('Error sending email');
+    }
+  };
+
   return (
+    
     <div class=" max-w-7xl max-lg:max-w-3xl mx-auto bg-white my-6 font-[sans-serif]">
       <motion.div
         variants={fadeIn("up", 0.5)}
@@ -154,6 +194,9 @@ const ContactPage = () => {
                   <input
                     type="text"
                     placeholder="Nom"
+                    onChange={handleChange}
+                    name="name"
+                    value={formData.name}
                     class="px-2 py-3 bg-white w-full text-sm text-black border-b border-gray-300 focus:border-blue-500 outline-none"
                   />
                   <svg
@@ -179,6 +222,9 @@ const ContactPage = () => {
                 <div class="relative flex items-center">
                   <input
                     type="text"
+                    name="rename"
+                    onChange={handleChange}
+                    value={formData.rename}
                     placeholder="Prenom"
                     class="px-2 py-3 bg-white w-full text-sm text-black border-b border-gray-300 focus:border-blue-500 outline-none"
                   />
@@ -205,6 +251,9 @@ const ContactPage = () => {
                 <div class="relative flex items-center">
                   <input
                     type="number"
+                    name="num"
+                    value={formData.num}
+                    onChange={handleChange}
                     placeholder="Numero"
                     class="px-2 py-3 bg-white text-black w-full text-sm text-gray-800 border-b border-gray-300 focus:border-blue-500 outline-none"
                   />
@@ -223,6 +272,9 @@ const ContactPage = () => {
                 <div class="relative flex items-center">
                   <input
                     type="email"
+                    name="email"
+                    onChange={handleChange}
+                    value={formData.email}
                     placeholder="Email"
                     class="px-2 py-3 bg-white text-black w-full text-sm text-gray-800 border-b border-gray-300 focus:border-blue-500 outline-none"
                   />
@@ -263,6 +315,9 @@ const ContactPage = () => {
                 <div class="relative flex items-center sm:col-span-2">
                   <textarea
                     placeholder="Votre message par ici"
+                    name="message"
+                    onChange={handleChange}
+                    value={formData.message}
                     class="px-2 pt-3 bg-white text-black w-full text-sm text-gray-800 border-b border-gray-300 focus:border-blue-500 outline-none"
                   ></textarea>
                   <svg
@@ -356,7 +411,9 @@ const ContactPage = () => {
                 </div>
               </div>
 
-              <Button className="hover:bg-black hover:uppercase hover:animate-bounce absolute ml-[auto] mt-12 flex items-center justify-center text-sm lg:ml-auto max-lg:w-full rounded-lg px-4 py-3 tracking-wide text-white bg-blue-600 hover:bg-black ">
+              <Button 
+              type="submit"
+              className="hover:bg-black hover:uppercase hover:animate-bounce absolute ml-[auto] mt-12 flex items-center justify-center text-sm lg:ml-auto max-lg:w-full rounded-lg px-4 py-3 tracking-wide text-white bg-blue-600 hover:bg-black ">
                 ENVOYER
               </Button>
             </form>

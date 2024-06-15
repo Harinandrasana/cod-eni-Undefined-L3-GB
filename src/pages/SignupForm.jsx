@@ -30,7 +30,7 @@ const SignupForm = () => {
   };
 
   return (
-    <div className="font-[sans-serif] bg-white text-white md:h-screen">
+    <div className="shadow-lg font-[sans-serif] bg-white text-white md:h-screen">
       <div className="grid md:grid-cols-2 items-center gap-8 h-full">
         <div className="max-md:order-1 p-4">
           <img
@@ -39,8 +39,8 @@ const SignupForm = () => {
             alt="login-image"
           />
         </div>
-        <div className=" shadow:lg text-black flex items-center md:p-8 p-6 bg-white px-[150px] h-full lg:w-11/12 lg:ml-auto">
-          <form className="flex flex-col justify-center max-w-lg w-full h-full mx-auto px-[150px]" onSubmit={handleSubmit}>
+        <div className=" shadow-lg text-black flex items-center md:p-8 p-6 bg-white px-[150px] h-full lg:w-11/12 lg:ml-auto">
+          <form className=" flex flex-col justify-center max-w-lg w-full h-full mx-auto px-[150px]" onSubmit={handleSubmit}>
             <div className="mb-12">
               <h3 className="uppercase text-lg font-bold text-yellow-400">
                Creer un Compte :
