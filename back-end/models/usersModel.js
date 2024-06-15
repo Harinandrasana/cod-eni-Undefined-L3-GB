@@ -2,18 +2,18 @@ const db = require("../connectionDB/db");
 
 class Users {
 
-    static async singUp(identifient, password) {
+    static async singUp(username, email, password) {
         return new Promise(resolve => {
-            db.query("INSERT INTO users(identifient, passWord) VALUES(?,?)", [identifient, password], (err, result) => {
+            db.query("INSERT INTO citizen.user(username, email, password) VALUES(?,?,?)", [username, email, password], (err, result) => {
                 if (!err)
                     resolve(result);
             })
         })
     };
 
-    static async Login(username, password) {
+    static async Login(email, password) {
         return new Promise(resolve => {
-            db.query("SELECT * FROM citizen.user WHERE username=? AND passWord=?", [username, password], (err, result) => {
+            db.query("SELECT * FROM citizen.user WHERE email=? AND passWord=?", [email, password], (err, result) => {
                 if (!err)
                     resolve(result);
             });
