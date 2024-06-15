@@ -30,7 +30,9 @@ const ServiceDescription = ({ text, id }) => {
           {text}
         </Text>
         <Link to={connectedUser !== null ? `/services/${id}` : "/LoginForm"}>
-          <Button mt={10}>Plus de détails</Button>
+          <Button bg="red" p={2} disabled={!connectedUser} mt={10}>
+            Plus de détails
+          </Button>
         </Link>
       </motion.h1>
     </Box>
