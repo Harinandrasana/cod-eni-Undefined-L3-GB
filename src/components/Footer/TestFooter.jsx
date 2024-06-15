@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const TestFooter = () => {
   return (
-    <footer class="bg-[#f2eded] py-4 px-10 font-sans tracking-wide">
+    <footer class="bg-[#f2f2f8] py-4 px-10 font-sans tracking-wide">
       <div class="lg:max-w-[50%] mx-auto text-center">
         <h3 class="text-3xl font-bold text-gray-800">
           <Link to={"/contact"}>

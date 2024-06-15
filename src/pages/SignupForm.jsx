@@ -165,14 +165,14 @@ const SignupForm = () => {
                 </a>
               </label>
             </div>
-            {/* <div className="mt-12">
+            <div className="mt-12">
               <button
                 type="submit"
-                className="w-max shadow-xl py-2.5 px-8 text-sm font-semibold rounded-md bg-transparent text-yellow-400 border border-yellow-400 focus:outline-none"
+                className="hover:bg-[black] hover:text-white hover:animate-bounce w-max shadow-xl py-2.5 px-8 text-sm font-semibold rounded-md bg-[#00304c] text-white border border-yellow-400 focus:outline-none"
               >
                 S'inscrire
               </button>
-              <p className="text-sm mt-8">
+             {/*  <p className="text-sm mt-8">
                 Already have an account?{" "}
                 <a
                   href="javascript:void(0);"
@@ -180,8 +180,8 @@ const SignupForm = () => {
                 >
                   Login here
                 </a>
-              </p>
-            </div> */}
+              </p>*/}
+            </div> 
           </form>
         </div>
       </div>

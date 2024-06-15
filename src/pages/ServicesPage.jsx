@@ -21,7 +21,7 @@ const ServicesPage = () => {
               textAlign={"center"}
               mb={10}
               p={20}
-              bg={"#a6d6"}
+              bg={"#d9fdff"}
               borderRadius={5}
               minW={1500}
             >
