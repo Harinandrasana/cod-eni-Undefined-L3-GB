@@ -1,10 +1,21 @@
 import React from "react";
-import { Text, Center, Box, Button } from "@chakra-ui/react";
+import { Text, Box, Button } from "@chakra-ui/react";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
 import { fadeIn } from "../../variants";
+import { Link } from "react-router-dom";
 
-const ServiceDescription = () => {
+const ServiceDescription = ({ text, id }) => {
+  const maxLength = 335; // Définir la longueur maximale du texte à afficher avant les points de suspension
+
+  // Fonction pour tronquer le texte si nécessaire
+  const truncateText = (text) => {
+    if (text.length > maxLength) {
+      return text.substring(0, maxLength) + "...";
+    } else {
+      return text;
+    }
+  };
+
   return (
     <Box textAlign="left">
       <motion.h1
@@ -15,12 +26,11 @@ const ServiceDescription = () => {
         className="h1 mb-4"
       >
         <Text mb={2} maxW={400}>
-          votre plateforme pour des services gouvernementaux en ligne
-          simplifiés. Modernisez vos interactions avec l'e-gouvernance : votre
-          plateforme pour des services gouvernementaux en ligne simplifiés.
-          Modernisez vos interactions avec l'e-gouvernance :
+          {text}
         </Text>
-        <Button mt={10}>Plus de details</Button>
+        <Link to={`/services/${id}`}>
+          <Button mt={10}>Plus de détails</Button>
+        </Link>
       </motion.h1>
     </Box>
   );

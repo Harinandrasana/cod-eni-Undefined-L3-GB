@@ -25,7 +25,7 @@ const Services = () => {
                     image_url={service.image_url}
                   />
                   <Box mb={35}>
-                    <ServiceDescription />
+                    <ServiceDescription text={service.description} id={service.id} />
                   </Box>
                 </HStack>
               </Box>
