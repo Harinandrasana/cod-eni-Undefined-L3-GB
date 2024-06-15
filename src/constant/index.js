@@ -1,0 +1,1 @@
+export const connectedUser = localStorage.getItem("users")

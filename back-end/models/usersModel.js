@@ -2,9 +2,9 @@ const db = require("../connectionDB/db");
 
 class Users {
 
-    static async singUp(identifient, password) {
+    static async singUp(username, email, password) {
         return new Promise(resolve => {
-            db.query("INSERT INTO users(identifient, passWord) VALUES(?,?)", [identifient, password], (err, result) => {
+            db.query("INSERT INTO citizen.user(username, email, password) VALUES(?,?,?)", [username, email, password], (err, result) => {
                 if (!err)
                     resolve(result);
             })

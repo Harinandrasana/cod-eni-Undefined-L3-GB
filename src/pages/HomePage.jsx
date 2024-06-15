@@ -8,17 +8,43 @@ import ContactPage from "./ContactPage";
 import HelpPage from "./HelpPage";
 import Publicitaire from "./Publicitaire";
 import Accueil from "./Accueil";
+import { fadeIn } from "../variants";
+import { motion } from "framer-motion";
+
 const HomePage = () => {
   return (
-    <div> 
+    <div>
       {/* <Accueil/> */}
       <Home />
-     
-      <Publicitaire/>
+      <motion.div
+        variants={fadeIn("up", 1)}
+        initial="hidden"
+        animate="show"
+        exit="hidden"
+        className="h1"
+      >
+        <Publicitaire />
+      </motion.div>
       <AboutPage />
       <Services />
-      <ContactPage />
-      <HelpPage />
+      <motion.div
+        variants={fadeIn("up", 1)}
+        initial="hidden"
+        animate="show"
+        exit="hidden"
+        className="h1"
+      >
+        <ContactPage />
+      </motion.div>
+      <motion.div
+        variants={fadeIn("up", 1)}
+        initial="hidden"
+        animate="show"
+        exit="hidden"
+        className="h1"
+      >
+        <HelpPage />
+      </motion.div>
       {/* <AboutBanner /> */}
     </div>
   );

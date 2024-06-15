@@ -15,6 +15,10 @@ import {
   IconProps,
   useColorModeValue,
 } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
+import { fadeIn } from "../variants";
+import { motion } from "framer-motion";
+import { connectedUser } from "../constant";
 
 export default function Home() {
   return (
@@ -31,56 +35,79 @@ export default function Home() {
             fontWeight={600}
             fontSize={{ base: "3xl", sm: "4xl", lg: "6xl" }}
           >
-            <Text
-              as={"span"}
-              position={"relative"}
-              _after={{
-                content: "''",
-                width: "full",
-                height: "30%",
-                position: "absolute",
-                bottom: 1,
-                left: 0,
-                bg: "red.400",
-                zIndex: -1,
-              }}
+            <motion.div
+              variants={fadeIn("right", 0.5)}
+              initial="hidden"
+              animate="show"
+              exit="hidden"
+              className="h1"
             >
-              Bienvenue,
-            </Text>
-            <br />
-            <Text as={"span"} color={"red.400"}>
-              Sur Citizen Connect!
-            </Text>
+              <Text
+                as={"span"}
+                position={"relative"}
+                _after={{
+                  content: "''",
+                  width: "full",
+                  height: "30%",
+                  position: "absolute",
+                  bottom: 1,
+                  left: 0,
+                  bg: "red.400",
+                  zIndex: -1,
+                }}
+              >
+                Bienvenue,
+              </Text>
+              <br />
+              <Text as={"span"} color={"red.400"}>
+                Sur Citizen Connect!
+              </Text>
+            </motion.div>
           </Heading>
-          <Text color={"gray.500"}>
-            Votre plateforme pour des services gouvernementaux en ligne
-            simplifier. Modernisez vos interactions avec l'e-gouvernance!
-          </Text>
-          <Stack
-            spacing={{ base: 4, sm: 6 }}
-            direction={{ base: "column", sm: "row" }}
+          <motion.div
+            variants={fadeIn("right", 1)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="h1"
           >
-            <Button
-              rounded={"full"}
-              size={"lg"}
-              fontWeight={"normal"}
-              px={6}
-              colorScheme={"red"}
-              bg={"red.400"}
-              _hover={{ bg: "red.500" }}
-            >
-              Se connecter
-            </Button>
-            <Button
-              rounded={"full"}
-              size={"lg"}
-              fontWeight={"normal"}
-              px={6}
-              leftIcon={<PlayIcon h={4} w={4} color={"gray.300"} />}
-            >
-              S'inscrire
-            </Button>
-          </Stack>
+            <Text color={"gray.500"}>
+              Votre plateforme pour des services gouvernementaux en ligne
+              simplifier. Modernisez vos interactions avec l'e-gouvernance!
+            </Text>
+            {connectedUser === null && (
+              <Stack
+                mt={6}
+                spacing={{ base: 4, sm: 6 }}
+                direction={{ base: "column", sm: "row" }}
+              >
+                <Link to={"/LoginForm"}>
+                  <Button
+                    rounded={"full"}
+                    size={"lg"}
+                    fontWeight={"normal"}
+                    px={6}
+                    colorScheme={"red"}
+                    bg={"red.400"}
+                    _hover={{ bg: "red.500" }}
+                  >
+                    Se connecter
+                  </Button>
+                </Link>
+                <Link to={"/SignupForm"}>
+                  <Button
+                    rounded={"full"}
+                    size={"lg"}
+                    fontWeight={"normal"}
+                    px={6}
+                    leftIcon={<PlayIcon h={4} w={4} color={"gray.300"} />}
+                  >
+                    S'inscrire
+                  </Button>
+                </Link>
+              </Stack>
+            )}
+          </motion.div>
         </Stack>
         <Flex
           flex={1}
@@ -89,46 +116,54 @@ export default function Home() {
           position={"relative"}
           w={"full"}
         >
-          <Blob
-            w={"150%"}
-            h={"150%"}
-            position={"absolute"}
-            top={"-20%"}
-            left={0}
-            zIndex={-1}
-            color={useColorModeValue("red.50", "red.400")}
-          />
-          <Box
-            position={"relative"}
-            height={"300px"}
-            rounded={"2xl"}
-            boxShadow={"2xl"}
-            width={"full"}
-            overflow={"hidden"}
+          <motion.div
+            variants={fadeIn("left", 1)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="h1"
           >
-            <IconButton
-              aria-label={"Play Button"}
-              variant={"ghost"}
-              _hover={{ bg: "transparent" }}
-              icon={<PlayIcon w={12} h={12} />}
-              size={"lg"}
-              color={"white"}
+            <Blob
+              w={"150%"}
+              h={"150%"}
               position={"absolute"}
-              left={"50%"}
-              top={"50%"}
-              transform={"translateX(-50%) translateY(-50%)"}
+              top={"-20%"}
+              left={0}
+              zIndex={-1}
+              color={useColorModeValue("red.50", "red.400")}
             />
-            <Image
-              alt={"Hero Image"}
-              fit={"cover"}
-              align={"center"}
-              w={"100%"}
-              h={"100%"}
-              src={
-                "https://dubasque.org/wp-content/uploads/2016/03/fotolia_solidaritc3a9-1024x682.jpg"
-              }
-            />
-          </Box>
+            <Box
+              position={"relative"}
+              height={"300px"}
+              rounded={"2xl"}
+              boxShadow={"2xl"}
+              width={"full"}
+              overflow={"hidden"}
+            >
+              <IconButton
+                aria-label={"Play Button"}
+                variant={"ghost"}
+                _hover={{ bg: "transparent" }}
+                icon={<PlayIcon w={12} h={12} />}
+                size={"lg"}
+                color={"white"}
+                position={"absolute"}
+                left={"50%"}
+                top={"50%"}
+                transform={"translateX(-50%) translateY(-50%)"}
+              />
+              <Image
+                alt={"Hero Image"}
+                fit={"cover"}
+                align={"center"}
+                w={"100%"}
+                h={"100%"}
+                src={
+                  "https://dubasque.org/wp-content/uploads/2016/03/fotolia_solidaritc3a9-1024x682.jpg"
+                }
+              />
+            </Box>
+          </motion.div>
         </Flex>
       </Stack>
     </Container>
