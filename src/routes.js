@@ -14,6 +14,7 @@ import LoginForm from "./pages/LoginForm";
 import SignupForm from "./pages/SignupForm";
 import Publicitaire from "./pages/Publicitaire";
 import Accueil from "./pages/Accueil";
+import ServiceDetails from "./pages/ServiceDetails";
 const router = createBrowserRouter([
     {
         path: "/",
@@ -37,7 +38,8 @@ const router = createBrowserRouter([
             { path: "/LoginForm", element: <LoginForm /> },
             { path: "/SignupForm", element: <SignupForm /> },
             { path: "/Publiciaire", element: <Publicitaire /> },
-            { path: "/Accueil", element: <Accueil /> }
+            { path: "/Accueil", element: <Accueil /> },
+            { path: "/services/:id", element: <ServiceDetails /> }
         ],
     },
 ]);
