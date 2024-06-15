@@ -2,20 +2,22 @@ import React from "react";
 
 const SignupForm = () => {
 return(
-    <div class="font-[sans-serif] bg-white text-white md:h-screen">
-    <div class="grid md:grid-cols-2 items-center gap-8 h-full">
+    <div class="font-[sans-serif] bg-white text-black text-sm md:h-screen p-[50px] ">
+    <div class="grid md:grid-cols-2 items-center gap-8 h-full shadow-lg ">
       <div class="max-md:order-1 p-4">
         <img src="https://readymadeui.com/signin-image.webp" class="lg:max-w-[90%] w-full h-full object-contain block mx-auto" alt="login-image" />
       </div>
-      <div class="flex items-center md:p-8 p-6 bg-[#0C172C] h-full lg:w-11/12 lg:ml-auto">
-        <form class="max-w-lg w-full mx-auto">
+      <div class="flex items-center md:p-8 p-6 bg-white h-full lg:w-11/12 lg:ml-auto">
+        <form class=" max-w-lg w-full mx-auto px-[150px]">
           <div class="mb-12">
-            <h3 class="text-3xl font-bold text-yellow-400">Create an account</h3>
+            <h3 class="text-lg font-bold text-yellow-400 uppercase text-bold">Creer un compte</h3> 
+            <p className="text-sm py-5">Mieux vaut avoir un compte pour ne pas-y perdre</p>
           </div>
+         
           <div>
-            <label class="text-xs block mb-2">Full Name</label>
-            <div class="relative flex items-center">
-              <input name="name" type="text" required class="w-full bg-transparent text-sm border-b border-gray-300 focus:border-yellow-400 px-2 py-3 outline-none" placeholder="Enter name" />
+            <label class="text-base block mb-2">Nom</label>
+            <div class="relative flex items-center ">
+              <input name="name" type="text" required class="w-full bg-transparent text-sm border-b border-gray-300 focus:border-yellow-400 px-2 py-3 outline-none" placeholder="Entrer votre Nom" />
               <svg xmlns="http://www.w3.org/2000/svg" fill="#bbb" stroke="#bbb" class="w-[18px] h-[18px] absolute right-2" viewBox="0 0 24 24">
                 <circle cx="10" cy="7" r="6" data-original="#000000"></circle>
                 <path d="M14 15H6a5 5 0 0 0-5 5 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 5 5 0 0 0-5-5zm8-4h-2.59l.3-.29a1 1 0 0 0-1.42-1.42l-2 2a1 1 0 0 0 0 1.42l2 2a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42l-.3-.29H22a1 1 0 0 0 0-2z" data-original="#000000"></path>
@@ -23,7 +25,7 @@ return(
             </div>
           </div>
           <div class="mt-10">
-            <label class="text-xs block mb-2">Email</label>
+            <label class="text-base block mb-2">Email</label>
             <div class="relative flex items-center">
               <input name="email" type="text" required class="w-full bg-transparent text-sm border-b border-gray-300 focus:border-yellow-400 px-2 py-3 outline-none" placeholder="Enter email" />
               <svg xmlns="http://www.w3.org/2000/svg" fill="#bbb" stroke="#bbb" class="w-[18px] h-[18px] absolute right-2" viewBox="0 0 682.667 682.667">
@@ -40,25 +42,25 @@ return(
             </div>
           </div>
           <div class="mt-10">
-            <label class="text-xs block mb-2">Password</label>
+            <label class="text-base block mb-2">Mot de passe</label>
             <div class="relative flex items-center">
-              <input name="password" type="password" required class="w-full bg-transparent text-sm border-b border-gray-300 focus:border-yellow-400 px-2 py-3 outline-none" placeholder="Enter password" />
+              <input name="password" type="password" required class="w-full bg-transparent text-sm border-b border-gray-300 focus:border-yellow-400 px-2 py-3 outline-none" placeholder="************" />
               <svg xmlns="http://www.w3.org/2000/svg" fill="#bbb" stroke="#bbb" class="w-[18px] h-[18px] absolute right-2 cursor-pointer" viewBox="0 0 128 128">
                 <path d="M64 104C22.127 104 1.367 67.496.504 65.943a4 4 0 0 1 0-3.887C1.367 60.504 22.127 24 64 24s62.633 36.504 63.496 38.057a4 4 0 0 1 0 3.887C126.633 67.496 105.873 104 64 104zM8.707 63.994C13.465 71.205 32.146 96 64 96c31.955 0 50.553-24.775 55.293-31.994C114.535 56.795 95.854 32 64 32 32.045 32 13.447 56.775 8.707 63.994zM64 88c-13.234 0-24-10.766-24-24s10.766-24 24-24 24 10.766 24 24-10.766 24-24 24zm0-40c-8.822 0-16 7.178-16 16s7.178 16 16 16 16-7.178 16-16-7.178-16-16-16z" data-original="#000000"></path>
               </svg>
             </div>
           </div>
           <div class="flex items-center mt-8">
-            <input id="remember-me" name="remember-me" type="checkbox" class="h-4 w-4 shrink-0 rounded" />
+            <input id="remember-me" name="remember-me" type="radio" class="test-base h-4 w-4 shrink-0 rounded" />
             <label for="remember-me" class="ml-3 block text-sm">
-              I accept the <a href="javascript:void(0);" class="text-yellow-500 font-semibold hover:underline ml-1">Terms and Conditions</a>
+              J'accepte <a href="javascript:void(0);" class="text-yellow-500 font-semibold hover:underline ml-1">Termes & Conditions</a>
             </label>
           </div>
           <div class="mt-12">
-            <button type="button" class="w-max shadow-xl py-2.5 px-8 text-sm font-semibold rounded-md bg-transparent text-yellow-400 border border-yellow-400 focus:outline-none">
-              Register
+            <button type="button" class="hover:bg-black hover:text-white duration-300 hover:animate-bounce hover:px-[50px] hover:uppercase text-black w-max shadow-xl py-2.5 px-8 text-sm font-semibold rounded-md bg-transparent text-yellow-400 border border-yellow-400 focus:outline-none">
+              S'inscrire
             </button>
-            <p class="text-sm mt-8">Already have an account? <a href="javascript:void(0);" class="text-yellow-400 font-semibold hover:underline ml-1">Login here</a></p>
+            {/* <p class="text-sm mt-8">Already have an account? <a href="javascript:void(0);" class="text-yellow-400 font-semibold hover:underline ml-1">Login here</a></p> */}
           </div>
         </form>
       </div>

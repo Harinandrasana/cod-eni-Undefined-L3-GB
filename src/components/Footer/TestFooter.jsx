@@ -48,7 +48,7 @@ const TestFooter = () => {
           <li><a href="javascript:void(0)" class="text-gray-500 hover:text-gray-800 text-[15px]">citizenconnect.mg</a>
           </li>
           <li><a href="javascript:void(0)" class="text-gray-500 hover:text-gray-800 text-[15px]">Termes & conditions</a></li>
-          <li><a href="javascript:void(0)" class="text-gray-500 hover:text-gray-800 text-[15px]">Equipes devs</a></li>
+          <li><a href="javascript:void(0)" class="text-gray-500 hover:text-gray-800 text-[15px]">Equipes developpeurs</a></li>
           <li><a href="javascript:void(0)" class="text-gray-500 hover:text-gray-800 text-[15px]">Commentaire</a></li>
         </ul>
       </div>

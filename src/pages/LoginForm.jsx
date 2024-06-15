@@ -24,7 +24,7 @@ const LoginForm = () => {
         <div className="flex shadow-lg items-center md:p-8 p-6 bg-white md:rounded-tl-[55px] md:rounded-bl-[55px] h-full">
           <form className="max-w-lg w-full mx-auto shadow-lg p-[100px]" onSubmit={handleSubmit}>
             <div className="mb-12">
-              <h3 className="text-4xl font-extrabold uppercase">Se Connecter</h3>
+              <h3 className="text-lg font-extrabold uppercase">Se Connecter</h3>
               <p className="text-sm mt-4">
                Connecter en toute securité{" "}
                 <a
@@ -36,7 +36,7 @@ const LoginForm = () => {
               </p>
             </div>
             <div>
-              <label className="text-xs block mb-2">Email</label>
+              <label className="text-base block mb-2">Email</label>
               <div className="relative flex items-center">
                 <input
                   name="email"
@@ -79,7 +79,7 @@ const LoginForm = () => {
               </div>
             </div>
             <div className="mt-8">
-              <label className="text-xs block mb-2">Mot de passe</label>
+              <label className="text-base block mb-2">Mot de passe</label>
               <div className="relative flex items-center">
                 <input
                   name="password"
@@ -109,26 +109,26 @@ const LoginForm = () => {
                 <input
                   id="remember-me"
                   name="remember-me"
-                  type="checkbox"
+                  type="radio"
                   className="h-4 w-4 shrink-0 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
                 />
-                <label htmlFor="remember-me" className="ml-3 block text-sm">
+                <label htmlFor="remember-me" className=" ml-3 block text-sm">
                   Se souvenir de moi
                 </label>
               </div>
-              <div>
+              {/* <div>
                 <a
                   href="javascript:void(0);"
                   className="text-[#1fb6ff] font-size-sm font-semibold text-sm hover:underline"
                 >
                   Mot de passe oublier ?
                 </a>
-              </div>
+              </div> */}
             </div>
             <div className="mt-12">
               <button
                 type="submit"
-                className="uppercase flex flex-grid col-md-2 items-center justify-center relative w-full shadow-xl py-2.5 px-4 text-sm font-semibold rounded-full text-white bg-[#333] hover:bg-[#222] focus:outline-none"
+                className="hover:animate-bounce hover:rounded-lg hover:px-[50px] duration-300 hover:uppercase flex flex-grid col-md-2 items-center justify-center relative w-full shadow-xl py-2.5 px-4 text-sm font-semibold rounded-md text-white bg-[#333] hover:bg-[#222] focus:outline-none"
                 style={
                   {
                     color:"white",
